@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid black;
+  height: 40px;
+}
+/* 플렉스는 부모에다 주면 애들이 따라가는 형태임 */
+
+.layout {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 104px;
+  height: 32px;
+}
+.profile {
+  width: 32px;
+  height: 32px;
+}
+
+.total {
+  display: flex;
+}
+.content {
+  flex: 4;
+}
+.face {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ad {
+  flex: 1;
+  background-color: palegoldenrod;
+}
+
+/* borderbox box sizing은 전체를 박스 안으로 다 넣는 거고 그래서
+이미지를 알아서 조정을 해준다 */
